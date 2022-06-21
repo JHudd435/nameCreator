@@ -9,9 +9,6 @@ setup(
     author_email='',
     license='Apache 2.0',
     packages=['NameGen'],
-    install_requires=[
-        'random',
-    ],
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Authors/Programmers',
