@@ -2,6 +2,9 @@
 A name generator that can generate names by country.
 """
 import random
+import os
+
+curDir = os.path.dirname(__file__)
 
 #lists(male)
 FirstAmericanMale = []
@@ -18,41 +21,41 @@ LastSpanish = []
 
 ## read files
 # american (USA)
-with open("./First Names/Male/american.txt") as mytxt:
+with open(curDir + "/FirstNames/Male/american.txt") as mytxt:
     for line in mytxt:
         FirstAmericanMale.append(line.rstrip().lstrip())
 
-with open("./First Names/Female/american.txt") as mytxt:
+with open(curDir + "/FirstNames/Female/american.txt") as mytxt:
     for line in mytxt:
         FirstAmericanFemale.append(line.rstrip().lstrip())
 
-with open("./Last Names/american.txt") as mytxt:
+with open(curDir + "/LastNames/american.txt") as mytxt:
     for line in mytxt:
         LastAmerican.append(line.rstrip().lstrip())
 
 # russian (Russian Federation)
-with open("./First Names/Male/russian.txt") as mytxt:
+with open(curDir + "/FirstNames/Male/russian.txt") as mytxt:
     for line in mytxt:
         FirstRussianMale.append(line.rstrip().lstrip())
 
-with open("./First Names/Female/russian.txt") as mytxt:
+with open(curDir + "/FirstNames/Female/russian.txt") as mytxt:
     for line in mytxt:
         FirstRussianFemale.append(line.rstrip().lstrip())
 
-with open("./Last Names/russian.txt") as mytxt:
+with open(curDir + "/LastNames/russian.txt") as mytxt:
     for line in mytxt:
         LastRussian.append(line.rstrip().lstrip())
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
-with open("./First Names/Male/spanish.txt") as mytxt:
+with open(curDir + "/FirstNames/Male/spanish.txt") as mytxt:
     for line in mytxt:
         FirstSpanishMale.append(line.rstrip().lstrip())
 
-with open("./First Names/Female/spanish.txt") as mytxt:
+with open(curDir + "/FirstNames/Female/spanish.txt") as mytxt:
     for line in mytxt:
         FirstSpanishFemale.append(line.rstrip().lstrip())
 
-with open("./Last Names/spanish.txt") as mytxt:
+with open(curDir + "/LastNames/spanish.txt") as mytxt:
     for line in mytxt:
         LastSpanish.append(line.rstrip().lstrip())
 
