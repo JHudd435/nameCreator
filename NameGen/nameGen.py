@@ -7,48 +7,50 @@ import random
 FirstAmericanMale = []
 FirstRussianMale = []
 FirstSpanishMale = []
-LastAmerican = []
-LastRussian = []
-LastSpanish = []
 #lists(female)
 FirstAmericanFemale = []
 FirstRussianFemale = []
 FirstSpanishFemale = []
+#lists(last)
+LastAmerican = []
+LastRussian = []
+LastSpanish = []
 
-#read files
-#male
+## read files
+# american (USA)
 with open("./First Names/Male/american.txt") as mytxt:
     for line in mytxt:
         FirstAmericanMale.append(line.rstrip().lstrip())
 
-with open("./First Names/Male/russian.txt") as mytxt:
-    for line in mytxt:
-        FirstRussianMale.append(line.rstrip().lstrip())
-
-with open("./First Names/Male/spanish.txt") as mytxt:
-    for line in mytxt:
-        FirstSpanishMale.append(line.rstrip().lstrip())
-#female
 with open("./First Names/Female/american.txt") as mytxt:
     for line in mytxt:
         FirstAmericanFemale.append(line.rstrip().lstrip())
+
+with open("./Last Names/american.txt") as mytxt:
+    for line in mytxt:
+        LastAmerican.append(line.rstrip().lstrip())
+
+# russian (Russian Federation)
+with open("./First Names/Male/russian.txt") as mytxt:
+    for line in mytxt:
+        FirstRussianMale.append(line.rstrip().lstrip())
 
 with open("./First Names/Female/russian.txt") as mytxt:
     for line in mytxt:
         FirstRussianFemale.append(line.rstrip().lstrip())
 
-with open("./First Names/Female/spanish.txt") as mytxt:
-    for line in mytxt:
-        FirstSpanishFemale.append(line.rstrip().lstrip())
-
-#last names
-with open("./Last Names/american.txt") as mytxt:
-    for line in mytxt:
-        LastAmerican.append(line.rstrip().lstrip())
-
 with open("./Last Names/russian.txt") as mytxt:
     for line in mytxt:
         LastRussian.append(line.rstrip().lstrip())
+
+# spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
+with open("./First Names/Male/spanish.txt") as mytxt:
+    for line in mytxt:
+        FirstSpanishMale.append(line.rstrip().lstrip())
+
+with open("./First Names/Female/spanish.txt") as mytxt:
+    for line in mytxt:
+        FirstSpanishFemale.append(line.rstrip().lstrip())
 
 with open("./Last Names/spanish.txt") as mytxt:
     for line in mytxt:
