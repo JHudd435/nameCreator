@@ -1,0 +1,11 @@
+include src/nameGen/F/names/american.txt
+include src/nameGen/M/names/american.txt
+include src/nameGen/L/names/american.txt
+
+include src/nameGen/F/names/russian.txt
+include src/nameGen/M/names/russian.txt
+include src/nameGen/L/names/russian.txt
+
+include src/nameGen/F/names/spanish.txt
+include src/nameGen/M/names/spanish.txt
+include src/nameGen/L/names/spanish.txt
