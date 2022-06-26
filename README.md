@@ -5,7 +5,7 @@ This is a python package for name generation. It can generate names from differe
 Current languages: "american", "russian", "spanish"
 
 # Installation
-pip install nameGen
+<i>pip install nameGen</i>
 
 # Usage
 
