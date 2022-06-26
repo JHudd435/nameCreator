@@ -9,11 +9,17 @@ Current languages: "american", "russian", "spanish"
 
 # Usage
 firstNameMale = nameGen.firstM.FirstNameMale('nationality')
+
 print(firstNameMale)
+
 lastName = nameGen.last.LastName('nationality')
+
 print(lastName)
 
 firstNameFemale = nameGen.firstF.FirstNameFemale('nationality')
+
 print(firstNameFemale)
+
 lastName = nameGen.last.LastName('nationality')
+
 print(lastName)
