@@ -1,6 +1,6 @@
 """
 
-Name generator by country.
+Generate a female first name
 
 """
 

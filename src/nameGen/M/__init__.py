@@ -1,5 +1,5 @@
 """
-Name generator by country.
+Generate a male first name
 
 """
 
