@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: nameCreator
+Version: 0.2.1
+Summary: A package to generate names by country
+Home-page: https://github.com/JHudd435/nameCreator
+Author: Justin Huddleston
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # nameCreator
 A python name generator.
 

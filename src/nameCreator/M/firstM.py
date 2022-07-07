@@ -7,6 +7,8 @@ curDir = os.path.dirname(__file__)
 FirstAmericanMale = []
 FirstRussianMale = []
 FirstSpanishMale = []
+FirstItalianMale = []
+FirstGermanMale = []
 
 
 def uniLine(obj):
@@ -29,6 +31,16 @@ with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
         FirstSpanishMale.append(uniLine(line))
 
+#italian
+with open(curDir + "\\names\\italian.txt") as mytxt:
+    for line in mytxt:
+        FirstItalianMale.append(uniLine(line))
+
+#german
+with open(curDir + "\\names\\german.txt") as mytxt:
+    for line in mytxt:
+        FirstGermanMale.append(uniLine(line))
+
 
 #defs
 def FirstNameMale(nationality):
@@ -38,3 +50,7 @@ def FirstNameMale(nationality):
         return random.choice(FirstSpanishMale)
     if (nationality.lower() == "russian"):
         return random.choice(FirstRussianMale)
+    if (nationality.lower() == "italian"):
+        return random.choice(FirstItalianMale)
+    if (nationality.lower() == "german"):
+        return random.choice(FirstGermanMale)

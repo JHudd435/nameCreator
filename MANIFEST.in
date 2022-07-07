@@ -9,3 +9,11 @@ include src/nameCreator/L/names/russian.txt
 include src/nameCreator/F/names/spanish.txt
 include src/nameCreator/M/names/spanish.txt
 include src/nameCreator/L/names/spanish.txt
+
+include src/nameCreator/F/names/italian.txt
+include src/nameCreator/M/names/italian.txt
+include src/nameCreator/L/names/italian.txt
+
+include src/nameCreator/F/names/german.txt
+include src/nameCreator/M/names/german.txt
+include src/nameCreator/L/names/german.txt
