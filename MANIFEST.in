@@ -17,3 +17,11 @@ include src/nameCreator/L/names/italian.txt
 include src/nameCreator/F/names/german.txt
 include src/nameCreator/M/names/german.txt
 include src/nameCreator/L/names/german.txt
+
+include src/nameCreator/F/names/french.txt
+include src/nameCreator/M/names/french.txt
+include src/nameCreator/L/names/french.txt
+
+include src/nameCreator/F/names/swedish.txt
+include src/nameCreator/M/names/swedish.txt
+include src/nameCreator/L/names/swedish.txt

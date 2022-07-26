@@ -2,7 +2,7 @@
 A python name generator.
 
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
-Current languages: "american", "russian", "spanish", "italian", "german"
+Current languages: "american", "russian", "spanish", "italian", "german","french","swedish"
 
 # Installation
 <i>pip install nameCreator</i>

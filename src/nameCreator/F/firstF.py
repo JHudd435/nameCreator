@@ -9,6 +9,8 @@ FirstRussianFemale = []
 FirstSpanishFemale = []
 FirstItalianFemale = []
 FirstGermanFemale = []
+FirstFrenchFemale = []
+FirstSwedishFemale = []
 
 
 def uniLine(obj):
@@ -41,6 +43,16 @@ with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
         FirstGermanFemale.append(uniLine(line))
 
+#french
+with open(curDir + "\\names\\french.txt") as mytxt:
+    for line in mytxt:
+        FirstFrenchFemale.append(uniLine(line))
+
+#swedish
+with open(curDir + "\\names\\swedish.txt") as mytxt:
+    for line in mytxt:
+        FirstSwedishFemale.append(uniLine(line))
+
 
 #defs
 def FirstNameFemale(nationality):
@@ -54,3 +66,7 @@ def FirstNameFemale(nationality):
         return random.choice(FirstItalianFemale)
     if (nationality.lower() == "german"):
         return random.choice(FirstGermanFemale)
+    if (nationality.lower() == "french"):
+        return random.choice(FirstFrenchFemale)
+    if (nationality.lower() == "swedish"):
+        return random.choice(FirstSwedishFemale)

@@ -9,6 +9,8 @@ LastRussian = []
 LastSpanish = []
 LastItalian = []
 LastGerman = []
+LastFrench = []
+LastSwedish = []
 
 
 def uniLine(obj):
@@ -41,6 +43,16 @@ with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
         LastGerman.append(uniLine(line))
 
+#french
+with open(curDir + "\\names\\french.txt") as mytxt:
+    for line in mytxt:
+        LastFrench.append(uniLine(line))
+
+#swedish
+with open(curDir + "\\names\\swedish.txt") as mytxt:
+    for line in mytxt:
+        LastSwedish.append(uniLine(line))
+
 
 #defs
 def LastName(nationality):
@@ -54,3 +66,7 @@ def LastName(nationality):
         return random.choice(LastItalian)
     if (nationality.lower() == "german"):
         return random.choice(LastGerman)
+    if (nationality.lower() == "french"):
+        return random.choice(LastFrench)
+    if (nationality.lower() == "swedish"):
+        return random.choice(LastSwedish)
