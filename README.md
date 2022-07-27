@@ -1,5 +1,8 @@
 # nameCreator
 [![GitHub issues](https://img.shields.io/github/issues/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/issues)
+[![GitHub forks](https://img.shields.io/github/forks/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/network)
+[![GitHub stars](https://img.shields.io/github/stars/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/stargazers)
+[![GitHub license](https://img.shields.io/github/license/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/blob/main/LICENSE)
 
 A python name generator.
 
