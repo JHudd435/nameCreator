@@ -8,7 +8,7 @@ Current languages: "american", "russian", "spanish", "italian", "german","french
 <i>pip install nameCreator</i>
 
 # Usage
-firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
+firstNameMale = nameCreator.firstM.FirstNameMale('nationality') # nationality can be any of the above options
 
 print(firstNameMale)
 
