@@ -13,6 +13,8 @@ Current languages: "american", "russian", "spanish", "italian", "german","french
 <i>pip install nameCreator</i>
 
 # Usage
+
+## In python file
 firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
 
 print(firstNameMale)
@@ -30,5 +32,5 @@ lastName = nameCreator.last.LastName('nationality')
 print(lastName)
 
 ## OR
-nameCreatorCLI generate --help
+<i>nameCreatorCLI generate --help</i>
 
