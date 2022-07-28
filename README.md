@@ -39,4 +39,4 @@ Run <i>python nameCreatorCLI.py generate --help</i>
 Or put the script in python Scripts folder and run <i>nameCreatorCLI --help</i> from any location
 
 ## Examples
-[Example.md](Example.md)
+[Examples.md](Examples.md)
