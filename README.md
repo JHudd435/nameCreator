@@ -9,10 +9,10 @@ A python name generator.
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
 Current languages: "american", "russian", "spanish", "italian", "german","french","swedish"
 
-## Installation
+# Installation
 <i>pip install nameCreator</i>
 
-## Usage
+# Usage
 firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
 
 print(firstNameMale)
@@ -29,14 +29,6 @@ lastName = nameCreator.last.LastName('nationality')
 
 print(lastName)
 
-### OR
-Go to folder you downloaded nameCreatorCLI.py to
+## OR
+nameCreatorCLI generate --help
 
-Open powershell window in folder
-
-Run <i>python nameCreatorCLI.py generate --help</i>
-
-Or put the script in python Scripts folder and run <i>nameCreatorCLI --help</i> from any location
-
-## Examples
-[Examples.md](Examples.md)
