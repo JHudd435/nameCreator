@@ -31,6 +31,6 @@ lastName = nameCreator.last.LastName('nationality')
 
 print(lastName)
 
-## OR
+## In command line
 <i>nameCreatorCLI generate --help</i>
 
