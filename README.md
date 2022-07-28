@@ -35,3 +35,4 @@ Go to folder you downloaded nameCreatorCLI.py to
 Open powershell window in folder
 
 Run <i>python nameCreatorCLI.py generate --help</i>
+Or put the script in python Scripts folder.
