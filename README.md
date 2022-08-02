@@ -15,21 +15,21 @@ Current languages: "american", "russian", "spanish", "italian", "german","french
 # Usage
 
 ## In python file
-firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
+<i>firstNameMale = nameCreator.firstM.FirstNameMale('nationality')</i>
 
-print(firstNameMale)
+<i>print(firstNameMale)</i>
 
-lastName = nameCreator.last.LastName('nationality')
+<i>lastName = nameCreator.last.LastName('nationality')</i>
 
-print(lastName)
+<i>print(lastName)</i>
 
-firstNameFemale = nameCreator.firstF.FirstNameFemale('nationality')
+<i>firstNameFemale = nameCreator.firstF.FirstNameFemale('nationality')</i>
 
-print(firstNameFemale)
+<i>print(firstNameFemale)</i>
 
-lastName = nameCreator.last.LastName('nationality')
+<i>lastName = nameCreator.last.LastName('nationality')</i>
 
-print(lastName)
+<i>print(lastName)</i>
 
 ## In command line
 <i>nameCreatorCLI generate --help</i>
