@@ -52,26 +52,26 @@ Amal Vera
 
 #German male
 
-Gonzalo Gamez
+Markus WeiAY
 
-Abdoulaye Olmedo
+Ali Voigt
 
-Arsenio Heras
+Jason KAPhler
 
-Imanol Costa
+Lasse KAPhler
 
-Jesus Manuel Anton
+Anton Schubert
 
 
 #German female
 
-Berta Castro
+Svenja KAPhler
 
-Khadija Martinez
+Christina Winkler
 
-Sara Maria Contreras
+Anna Fischer
 
-Bruna Castellanos
+Lisa Schneider
 
-Mariya Quesada
+Lea Thomas
 
