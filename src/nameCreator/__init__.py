@@ -1,5 +1,5 @@
 """
-Name generator by country.
+Generates male or female names, from a specified country. Languages are "american", "russian", "spanish", "italian", "german","french","swedish".
 
 """
 
