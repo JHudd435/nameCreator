@@ -1,6 +1,6 @@
 import random
 import os
-from unidecode import unidecode
+#from unidecode import unidecode
 
 curDir = os.path.dirname(__file__)
 #lists
@@ -12,46 +12,44 @@ LastGerman = []
 LastFrench = []
 LastSwedish = []
 
-
-def uniLine(obj):
-    return (unidecode(obj.rstrip().lstrip(), "preserve"))
-
+#def uniLine(obj):
+#    return (unidecode(obj.rstrip().lstrip(), "preserve"))
 
 ## read files
 # american (USA)
 with open(curDir + "\\names\\american.txt") as mytxt:
     for line in mytxt:
-        LastAmerican.append(uniLine(line))
+        LastAmerican.append(line)
 
 # russian (Russian Federation)
 with open(curDir + "\\names\\russian.txt") as mytxt:
     for line in mytxt:
-        LastRussian.append(uniLine(line))
+        LastRussian.append(line)
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
 with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
-        LastSpanish.append(uniLine(line))
+        LastSpanish.append(line)
 
 #italian
 with open(curDir + "\\names\\italian.txt") as mytxt:
     for line in mytxt:
-        LastItalian.append(uniLine(line))
+        LastItalian.append(line)
 
 #german
 with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
-        LastGerman.append(uniLine(line))
+        LastGerman.append(line)
 
 #french
 with open(curDir + "\\names\\french.txt") as mytxt:
     for line in mytxt:
-        LastFrench.append(uniLine(line))
+        LastFrench.append(line)
 
 #swedish
 with open(curDir + "\\names\\swedish.txt") as mytxt:
     for line in mytxt:
-        LastSwedish.append(uniLine(line))
+        LastSwedish.append(line)
 
 
 #defs

@@ -1,6 +1,6 @@
 import random
 import os
-from unidecode import unidecode
+#from unidecode import unidecode
 
 curDir = os.path.dirname(__file__)
 #lists
@@ -12,46 +12,44 @@ FirstGermanFemale = []
 FirstFrenchFemale = []
 FirstSwedishFemale = []
 
-
-def uniLine(obj):
-    return (unidecode(obj.rstrip().lstrip(), "preserve"))
-
+#def uniLine(obj):
+#    return (unidecode(obj.rstrip().lstrip(), "preserve"))
 
 ## read files
 # american (USA)
 with open(curDir + "\\names\\american.txt") as mytxt:
     for line in mytxt:
-        FirstAmericanFemale.append(uniLine(line))
+        FirstAmericanFemale.append(line)
 
 # russian (Russian Federation)
 with open(curDir + "\\names\\russian.txt") as mytxt:
     for line in mytxt:
-        FirstRussianFemale.append(uniLine(line))
+        FirstRussianFemale.append(line)
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
 with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
-        FirstSpanishFemale.append(uniLine(line))
+        FirstSpanishFemale.append(line)
 
 #italian
 with open(curDir + "\\names\\italian.txt") as mytxt:
     for line in mytxt:
-        FirstItalianFemale.append(uniLine(line))
+        FirstItalianFemale.append(line)
 
 #german
 with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
-        FirstGermanFemale.append(uniLine(line))
+        FirstGermanFemale.append(line)
 
 #french
 with open(curDir + "\\names\\french.txt") as mytxt:
     for line in mytxt:
-        FirstFrenchFemale.append(uniLine(line))
+        FirstFrenchFemale.append(line)
 
 #swedish
 with open(curDir + "\\names\\swedish.txt") as mytxt:
     for line in mytxt:
-        FirstSwedishFemale.append(uniLine(line))
+        FirstSwedishFemale.append(line)
 
 
 #defs
