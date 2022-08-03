@@ -19,37 +19,37 @@ def Line(obj):
 
 ## read files
 # american (USA)
-with open(curDir + "\\names\\american.txt") as mytxt:
+with open(curDir + "\\names\\american.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstAmericanFemale.append(Line(line))
 
 # russian (Russian Federation)
-with open(curDir + "\\names\\russian.txt") as mytxt:
+with open(curDir + "\\names\\russian.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstRussianFemale.append(Line(line))
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
-with open(curDir + "\\names\\spanish.txt") as mytxt:
+with open(curDir + "\\names\\spanish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstSpanishFemale.append(Line(line))
 
 #italian
-with open(curDir + "\\names\\italian.txt") as mytxt:
+with open(curDir + "\\names\\italian.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstItalianFemale.append(Line(line))
 
 #german
-with open(curDir + "\\names\\german.txt") as mytxt:
+with open(curDir + "\\names\\german.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstGermanFemale.append(Line(line))
 
 #french
-with open(curDir + "\\names\\french.txt") as mytxt:
+with open(curDir + "\\names\\french.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstFrenchFemale.append(Line(line))
 
 #swedish
-with open(curDir + "\\names\\swedish.txt") as mytxt:
+with open(curDir + "\\names\\swedish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstSwedishFemale.append(Line(line))
 
