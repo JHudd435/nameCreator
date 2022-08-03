@@ -12,44 +12,46 @@ FirstGermanFemale = []
 FirstFrenchFemale = []
 FirstSwedishFemale = []
 
-#def uniLine(obj):
-#    return (unidecode(obj.rstrip().lstrip(), "preserve"))
+
+def Line(obj):
+    return (obj.rstrip().lstrip())
+
 
 ## read files
 # american (USA)
 with open(curDir + "\\names\\american.txt") as mytxt:
     for line in mytxt:
-        FirstAmericanFemale.append(line)
+        FirstAmericanFemale.append(Line(line))
 
 # russian (Russian Federation)
 with open(curDir + "\\names\\russian.txt") as mytxt:
     for line in mytxt:
-        FirstRussianFemale.append(line)
+        FirstRussianFemale.append(Line(line))
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
 with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
-        FirstSpanishFemale.append(line)
+        FirstSpanishFemale.append(Line(line))
 
 #italian
 with open(curDir + "\\names\\italian.txt") as mytxt:
     for line in mytxt:
-        FirstItalianFemale.append(line)
+        FirstItalianFemale.append(Line(line))
 
 #german
 with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
-        FirstGermanFemale.append(line)
+        FirstGermanFemale.append(Line(line))
 
 #french
 with open(curDir + "\\names\\french.txt") as mytxt:
     for line in mytxt:
-        FirstFrenchFemale.append(line)
+        FirstFrenchFemale.append(Line(line))
 
 #swedish
 with open(curDir + "\\names\\swedish.txt") as mytxt:
     for line in mytxt:
-        FirstSwedishFemale.append(line)
+        FirstSwedishFemale.append(Line(line))
 
 
 #defs

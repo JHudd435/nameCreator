@@ -12,44 +12,46 @@ LastGerman = []
 LastFrench = []
 LastSwedish = []
 
-#def uniLine(obj):
-#    return (unidecode(obj.rstrip().lstrip(), "preserve"))
+
+def Line(obj):
+    return (obj.rstrip().lstrip())
+
 
 ## read files
 # american (USA)
 with open(curDir + "\\names\\american.txt") as mytxt:
     for line in mytxt:
-        LastAmerican.append(line)
+        LastAmerican.append(Line(line))
 
 # russian (Russian Federation)
 with open(curDir + "\\names\\russian.txt") as mytxt:
     for line in mytxt:
-        LastRussian.append(line)
+        LastRussian.append(Line(line))
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
 with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
-        LastSpanish.append(line)
+        LastSpanish.append(Line(line))
 
 #italian
 with open(curDir + "\\names\\italian.txt") as mytxt:
     for line in mytxt:
-        LastItalian.append(line)
+        LastItalian.append(Line(line))
 
 #german
 with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
-        LastGerman.append(line)
+        LastGerman.append(Line(line))
 
 #french
 with open(curDir + "\\names\\french.txt") as mytxt:
     for line in mytxt:
-        LastFrench.append(line)
+        LastFrench.append(Line(line))
 
 #swedish
 with open(curDir + "\\names\\swedish.txt") as mytxt:
     for line in mytxt:
-        LastSwedish.append(line)
+        LastSwedish.append(Line(line))
 
 
 #defs

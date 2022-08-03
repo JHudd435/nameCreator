@@ -12,44 +12,46 @@ FirstGermanMale = []
 FirstFrenchMale = []
 FirstSwedishMale = []
 
-#def uniLine(obj):
-#    return (unidecode(obj.rstrip().lstrip(), "preserve"))
+
+def Line(obj):
+    return (obj.rstrip().lstrip())
+
 
 ## read files
 # american (USA)
 with open(curDir + "\\names\\american.txt") as mytxt:
     for line in mytxt:
-        FirstAmericanMale.append(line)
+        FirstAmericanMale.append(Line(line))
 
 # russian (Russian Federation)
 with open(curDir + "\\names\\russian.txt") as mytxt:
     for line in mytxt:
-        FirstRussianMale.append(line)
+        FirstRussianMale.append(Line(line))
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
 with open(curDir + "\\names\\spanish.txt") as mytxt:
     for line in mytxt:
-        FirstSpanishMale.append(line)
+        FirstSpanishMale.append(Line(line))
 
 #italian
 with open(curDir + "\\names\\italian.txt") as mytxt:
     for line in mytxt:
-        FirstItalianMale.append(line)
+        FirstItalianMale.append(Line(line))
 
 #german
 with open(curDir + "\\names\\german.txt") as mytxt:
     for line in mytxt:
-        FirstGermanMale.append(line)
+        FirstGermanMale.append(Line(line))
 
 #french
 with open(curDir + "\\names\\french.txt") as mytxt:
     for line in mytxt:
-        FirstFrenchMale.append(line)
+        FirstFrenchMale.append(Line(line))
 
 #swedish
 with open(curDir + "\\names\\swedish.txt") as mytxt:
     for line in mytxt:
-        FirstSwedishMale.append(line)
+        FirstSwedishMale.append(Line(line))
 
 
 #defs
