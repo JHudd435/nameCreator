@@ -25,3 +25,8 @@ include src/nameCreator/L/names/french.txt
 include src/nameCreator/F/names/swedish.txt
 include src/nameCreator/M/names/swedish.txt
 include src/nameCreator/L/names/swedish.txt
+
+include src/nameCreator/F/names/finnish.txt
+include src/nameCreator/M/names/finnish.txt
+include src/nameCreator/L/names/finnish.txt
+
