@@ -16,7 +16,7 @@ def nameCreatorCLI():
 @click.option('-a', '--amount', help='How many names are generated.')
 @nameCreatorCLI.command()
 def generate(gender: str, language: str, amount=str):
-    """Generates names."""
+    """Generates names. Supported languages are american, russian, spanish, italian, german, french, finnish, and swedish."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
             firstname = nameCreator.firstM.FirstNameMale(language)
