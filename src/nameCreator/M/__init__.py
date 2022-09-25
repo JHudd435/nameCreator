@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Generate a male first name
 

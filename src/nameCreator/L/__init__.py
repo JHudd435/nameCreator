@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Generate a last name
 
