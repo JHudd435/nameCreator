@@ -1,10 +1,11 @@
 #!/usr/bin/env python
+# encoding=utf-8
 """
 Generates male or female names, from a specified country. Languages are "american", "russian", "spanish", "italian", "german","french","swedish".
 
 """
 
-__version__ = "0.8.0"
+__version__ = "0.8.1"
 __author__ = 'Justin Huddleston'
 
 from nameCreator.F import firstF
