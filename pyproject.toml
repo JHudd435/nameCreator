@@ -7,6 +7,6 @@ build-backend = "setuptools.build_meta"
 
 [project]
 dependencies = [
-  'click',
+  'click >=7.0.0',
 ]
 
