@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# encoding=utf-8
 import nameCreator
 import click
 
