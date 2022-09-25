@@ -5,7 +5,7 @@ Generates male or female names, from a specified country. Languages are "america
 
 """
 
-__version__ = "0.8.2"
+__version__ = "0.8.3"
 __author__ = 'Justin Huddleston'
 
 from nameCreator.F import firstF
