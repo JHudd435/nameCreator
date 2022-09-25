@@ -4,10 +4,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/stargazers)
 [![GitHub license](https://img.shields.io/github/license/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/blob/main/LICENSE)
 
-A python name generator.
+A python name generator for Windows.
 
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
-Current languages: "american", "russian", "spanish", "italian", "german","french","swedish", "finnish".
+Current languages: "american", "russian", "spanish", "italian", "german","french","swedish", "finnish". Will be adding Chinese and Japanese in next release.
 
 # Installation
 <i>pip install nameCreator</i>
