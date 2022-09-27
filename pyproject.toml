@@ -5,8 +5,3 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-[project]
-dependencies = [
-  'click >=7.0.0',
-]
-
