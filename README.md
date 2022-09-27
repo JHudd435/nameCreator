@@ -34,3 +34,5 @@ Current languages: "american", "russian", "spanish", "italian", "german","french
 ## In command line
 <i>nameCreatorCLI generate --help</i>
 
+Many of the name sets come from https://github.com/ironarachne/namegen
+
