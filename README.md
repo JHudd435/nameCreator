@@ -9,6 +9,8 @@ A python name generator for Windows.
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
 Current languages: "american", "russian", "spanish", "italian", "german","french","swedish", "finnish". Will be adding Chinese and Japanese in next release.
 
+Many of the name sets come from https://github.com/ironarachne/namegen
+
 # Installation
 <i>pip install nameCreator</i>
 
@@ -33,6 +35,4 @@ Current languages: "american", "russian", "spanish", "italian", "german","french
 
 ## In command line
 <i>nameCreatorCLI generate --help</i>
-
-Many of the name sets come from https://github.com/ironarachne/namegen
 
