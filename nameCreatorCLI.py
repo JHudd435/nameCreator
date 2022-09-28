@@ -19,14 +19,22 @@ def nameCreatorCLI():
     '-o',
     '--output',
     help="Where to save the generation. If left empty, does not save.")
+@click.option(
+    '-n',
+    '--noprint',
+    help="Does not print the names. Useless if you are not using output.")
 @nameCreatorCLI.command()
-def generate(gender: str, language: str, amount=str, output=str):
+def generate(gender: str, language: str, amount=str, output=str, noprint=str):
     """Generates names. Supported languages are american, russian, spanish, italian, german, french, finnish, and swedish."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
             firstname = nameCreator.firstM.FirstNameMale(language)
             lastname = nameCreator.last.LastName(language)
-            print(firstname + " " + lastname)
+            try:
+                if (noprint.lower() == "t"):
+                    pass
+            except:
+                print(firstname + " " + lastname)
             if (output != None):
                 with io.open(output, 'a', encoding='utf-8') as f:
                     f.write(firstname + " " + lastname + "\n")
@@ -34,7 +42,11 @@ def generate(gender: str, language: str, amount=str, output=str):
         for i in range(int(amount)):
             firstname = nameCreator.firstF.FirstNameFemale(language)
             lastname = nameCreator.last.LastName(language)
-            print(firstname + " " + lastname)
+            try:
+                if (noprint.lower() == "t"):
+                    pass
+            except:
+                print(firstname + " " + lastname)
             if (output != None):
                 with io.open(output, 'a', encoding='utf-8') as f:
                     f.write(firstname + " " + lastname + "\n")
