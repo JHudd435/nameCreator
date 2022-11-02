@@ -8,31 +8,35 @@ A python name generator for Windows.
 
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
 Current namesets: "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish". Will be adding Chinese and Japanese in next release. Also will split spanish into mexican, latino, and spanish.
+Many of the name sets come from https://github.com/ironarachne/namegen.
 
-Many of the name sets come from https://github.com/ironarachne/namegen
+## Installation
+Install from pypi with `pip`:
+```shell
+pip install nameCreator
+```
+## Usage
 
-# Installation
-<i>pip install nameCreator</i>
+### In python file
+```python
+firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
 
-# Usage
+print(firstNameMale)
 
-## In python file
-<i>firstNameMale = nameCreator.firstM.FirstNameMale('nationality')</i>
+lastName = nameCreator.last.LastName('nationality')
 
-<i>print(firstNameMale)</i>
+print(lastName)
 
-<i>lastName = nameCreator.last.LastName('nationality')</i>
+firstNameFemale = nameCreator.firstF.FirstNameFemale('nationality')
 
-<i>print(lastName)</i>
+print(firstNameFemale)
 
-<i>firstNameFemale = nameCreator.firstF.FirstNameFemale('nationality')</i>
+lastName = nameCreator.last.LastName('nationality')
 
-<i>print(firstNameFemale)</i>
+print(lastName)
+```
 
-<i>lastName = nameCreator.last.LastName('nationality')</i>
-
-<i>print(lastName)</i>
-
-## In command line
-<i>nameCreatorCLI generate --help</i>
-
+### In command line
+```shell
+nameCreatorCLI generate --help
+```
