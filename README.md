@@ -1,8 +1,8 @@
 # nameCreator
-[![GitHub issues](https://img.shields.io/github/issues/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/issues)
-[![GitHub forks](https://img.shields.io/github/forks/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/network)
-[![GitHub stars](https://img.shields.io/github/stars/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/stargazers)
-[![GitHub license](https://img.shields.io/github/license/JHudd435/nameCreator)](https://github.com/JHudd435/nameCreator/blob/main/LICENSE)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/JHudd435/nameCreator?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/JHudd435/nameCreator?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/JHudd435/nameCreator?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/JHudd435/nameCreator?style=for-the-badge)
 
 A python name generator for Windows.
 
