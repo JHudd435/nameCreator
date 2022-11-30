@@ -12,6 +12,7 @@ FirstGermanMale = []
 FirstFrenchMale = []
 FirstSwedishMale = []
 FirstFinnishMale = []
+FirstJapaneseRMale = []
 
 
 def Line(obj):
@@ -59,6 +60,11 @@ with open(curDir + "\\names\\finnish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstFinnishMale.append(Line(line))
 
+#japaneseR (romanized Japanese)
+with open(curDir + "\\names\\japaneseR.txt", encoding="utf-8") as mytxt:
+    for line in mytxt:
+        FirstJapaneseRMale.append(Line(line))
+
 
 #defs
 def FirstNameMale(nationality):
@@ -78,3 +84,5 @@ def FirstNameMale(nationality):
         return random.choice(FirstSwedishMale)
     if (nationality.lower() == "finnish"):
         return random.choice(FirstFinnishMale)
+    if (nationality.lower() == "japaneser"):
+        return random.choice(FirstJapaneseRMale)

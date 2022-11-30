@@ -25,7 +25,7 @@ def nameCreatorCLI():
     help="Does not print the names. Useless if you are not using output.")
 @nameCreatorCLI.command()
 def generate(gender: str, language: str, amount=str, output=str, noprint=str):
-    """Generates names. Supported languages are american, russian, spanish, italian, german, french, finnish, and swedish."""
+    """Generates names. Supported languages are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, and Romanized Japanese."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
             firstname = nameCreator.firstM.FirstNameMale(language)

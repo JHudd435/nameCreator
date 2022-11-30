@@ -30,3 +30,7 @@ include src/nameCreator/F/names/finnish.txt
 include src/nameCreator/M/names/finnish.txt
 include src/nameCreator/L/names/finnish.txt
 
+include src/nameCreator/F/names/japaneseR.txt
+include src/nameCreator/M/names/japaneseR.txt
+include src/nameCreator/L/names/japaneseR.txt
+
