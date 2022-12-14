@@ -34,3 +34,7 @@ include src/nameCreator/F/names/japaneseR.txt
 include src/nameCreator/M/names/japaneseR.txt
 include src/nameCreator/L/names/japaneseR.txt
 
+include src/nameCreator/F/names/japanese.txt
+include src/nameCreator/M/names/japanese.txt
+include src/nameCreator/L/names/japanese.txt
+

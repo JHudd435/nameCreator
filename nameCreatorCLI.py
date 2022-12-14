@@ -25,11 +25,15 @@ def nameCreatorCLI():
     help="Does not print the names. Useless if you are not using output.")
 @nameCreatorCLI.command()
 def generate(gender: str, language: str, amount=str, output=str, noprint=str):
-    """Generates names. Supported languages are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, and Romanized Japanese."""
+    """Generates names. Supported languages are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, Romanized Japanese, and Japanese."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
-            firstname = nameCreator.firstM.FirstNameMale(language)
-            lastname = nameCreator.last.LastName(language)
+            if (language == "japanese" or language == "japaneseR"):
+                firstname = nameCreator.last.LastName(language)
+                lastname = nameCreator.firstM.FirstNameMale(language)
+            else:
+                firstname = nameCreator.firstM.FirstNameMale(language)
+                lastname = nameCreator.last.LastName(language)
             try:
                 if (noprint.lower() == "t"):
                     pass
@@ -40,8 +44,12 @@ def generate(gender: str, language: str, amount=str, output=str, noprint=str):
                     f.write(firstname + " " + lastname + "\n")
     elif (gender.lower() == "female" or gender.lower() == "f"):
         for i in range(int(amount)):
-            firstname = nameCreator.firstF.FirstNameFemale(language)
-            lastname = nameCreator.last.LastName(language)
+            if (language == "japanese" or language == "japaneseR"):
+                lastname = nameCreator.firstF.FirstNameFemale(language)
+                firstname = nameCreator.last.LastName(language)
+            else:
+                firstname = nameCreator.firstF.FirstNameFemale(language)
+                lastname = nameCreator.last.LastName(language)
             try:
                 if (noprint.lower() == "t"):
                     pass

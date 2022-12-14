@@ -13,6 +13,7 @@ LastFrench = []
 LastSwedish = []
 LastFinnish = []
 LastJapaneseR = []
+LastJapanese = []
 
 
 def Line(obj):
@@ -65,6 +66,11 @@ with open(curDir + "\\names\\japaneseR.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         LastJapaneseR.append(Line(line))
 
+#japanese
+with open(curDir + "\\names\\japanese.txt", encoding="utf-8") as mytxt:
+    for line in mytxt:
+        LastJapanese.append(Line(line))
+
 
 #defs
 def LastName(nationality):
@@ -86,3 +92,5 @@ def LastName(nationality):
         return random.choice(LastFinnish)
     if (nationality.lower() == "japaneser"):
         return random.choice(LastJapaneseR)
+    if (nationality.lower() == "japanese"):
+        return random.choice(LastJapanese)
