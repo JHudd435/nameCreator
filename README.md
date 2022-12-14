@@ -55,3 +55,36 @@ Generates 10 italian female names, sends to a text file and does not print the o
 ```shell
 nameCreatorCLI generate -a 10 -l italian -g f -o italianNames.txt -n
 ```
+
+Arguments:
+
+Specifies the amount of names to generate:
+
+```shell
+-a --amount
+```
+
+Specifies the language (actually the nationality):
+
+```shell
+-l --language
+```
+
+Specifies the gender of the generated names:
+
+```shell
+-g --gender
+```
+
+Specifies the output path (like `C:/Users/You/test.txt` or `test.txt` to put in the current path):
+
+```shell
+-o --output
+```
+
+Specifies whether or not to print the output to the terminal (useless if there is no output path specified):
+
+```shell
+-n --noprint
+```
+
