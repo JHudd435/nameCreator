@@ -1,9 +1,10 @@
+# coding: utf-8
+
 import random
 import os
-#from unidecode import unidecode
 
 curDir = os.path.dirname(__file__)
-#lists
+# lists
 FirstAmericanFemale = []
 FirstRussianFemale = []
 FirstSpanishFemale = []
@@ -20,7 +21,7 @@ def Line(obj):
     return (obj.rstrip().lstrip())
 
 
-## read files
+# Read Files
 # american (USA)
 with open(curDir + "\\names\\american.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
@@ -36,43 +37,43 @@ with open(curDir + "\\names\\spanish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstSpanishFemale.append(Line(line))
 
-#italian
+# italian
 with open(curDir + "\\names\\italian.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstItalianFemale.append(Line(line))
 
-#german
+# german
 with open(curDir + "\\names\\german.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstGermanFemale.append(Line(line))
 
-#french
+# french
 with open(curDir + "\\names\\french.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstFrenchFemale.append(Line(line))
 
-#swedish
+# swedish
 with open(curDir + "\\names\\swedish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstSwedishFemale.append(Line(line))
 
-#finnish
+# finnish
 with open(curDir + "\\names\\finnish.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstFinnishFemale.append(Line(line))
 
-#japaneseR (romanized Japanese)
+# japaneseR (romanized Japanese)
 with open(curDir + "\\names\\japaneseR.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstJapaneseRFemale.append(Line(line))
 
-#japanese
+# japanese
 with open(curDir + "\\names\\japanese.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstJapaneseFemale.append(Line(line))
 
 
-#defs
+# defs
 def FirstNameFemale(nationality):
     if (nationality.lower() == "american"):
         return random.choice(FirstAmericanFemale)

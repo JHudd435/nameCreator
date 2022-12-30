@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import nameCreator
 import click
 import io
@@ -29,11 +31,11 @@ def generate(gender: str, language: str, amount=str, output=str, noprint=str):
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
             if (language == "japanese" or language == "japaneseR"):
-                firstname = nameCreator.last.LastName(language)
-                lastname = nameCreator.firstM.FirstNameMale(language)
+                firstname = nameCreator.LastName(language)
+                lastname = nameCreator.FirstNameMale(language)
             else:
-                firstname = nameCreator.firstM.FirstNameMale(language)
-                lastname = nameCreator.last.LastName(language)
+                firstname = nameCreator.FirstNameMale(language)
+                lastname = nameCreator.LastName(language)
             try:
                 if (noprint.lower() == "t"):
                     pass
@@ -45,11 +47,11 @@ def generate(gender: str, language: str, amount=str, output=str, noprint=str):
     elif (gender.lower() == "female" or gender.lower() == "f"):
         for i in range(int(amount)):
             if (language == "japanese" or language == "japaneseR"):
-                lastname = nameCreator.firstF.FirstNameFemale(language)
-                firstname = nameCreator.last.LastName(language)
+                lastname = nameCreator.FirstNameFemale(language)
+                firstname = nameCreator.LastName(language)
             else:
-                firstname = nameCreator.firstF.FirstNameFemale(language)
-                lastname = nameCreator.last.LastName(language)
+                firstname = nameCreator.FirstNameFemale(language)
+                lastname = nameCreator.LastName(language)
             try:
                 if (noprint.lower() == "t"):
                     pass
