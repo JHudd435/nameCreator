@@ -11,10 +11,23 @@ Current nationalities: "american", "russian", "spanish", "italian", "german", "f
 Many of the name sets come from https://github.com/ironarachne/namegen.
 
 ## Installation
+
+### From pypi
 Install from pypi with `pip`:
 ```shell
 pip install nameCreator
 ```
+
+### Build from source
+Clone the repository and cd into the nameCreator directory, then:
+
+```shell
+pip install build
+python -m build
+cd dist
+pip install nameCreator-0.9.0-py3-none-any.whl
+```
+
 ## Usage
 
 ### In python file (latest release)
