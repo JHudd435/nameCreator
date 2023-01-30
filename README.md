@@ -7,8 +7,7 @@
 A python name generator for Windows.
 
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
-Current nationalities: "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish", "japaneser" (japanese romanized), and "japanese". Will be adding Chinese and Japanese by release 1.0.0. Also will split spanish into mexican, latino, and spanish.
-Many of the name sets come from https://github.com/ironarachne/namegen.
+Nationalities: "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish", "japaneser" (japanese romanized), and "japanese". Will be adding Chinese and Japanese by release 1.0.0. Also will split spanish into mexican, latino, and spanish.
 
 ## Installation
 
@@ -79,13 +78,13 @@ nameCreatorCLI generate --help
 Generates 10 male finnish names:
 
 ```shell
-nameCreatorCLI generate -a 10 -l finnish -g m
+nameCreatorCLI generate -a 10 -e finnish -g m
 ```
 
 Generates 10 italian female names, sends to a text file and does not print the output to the terminal:
 
 ```shell
-nameCreatorCLI generate -a 10 -l italian -g f -o italianNames.txt -n
+nameCreatorCLI generate -a 10 -e italian -g f -o italianNames.txt -n
 ```
 
 Arguments:
@@ -96,10 +95,10 @@ Specifies the amount of names to generate:
 -a --amount
 ```
 
-Specifies the language (actually the nationality):
+Specifies the ethnicity:
 
 ```shell
--l --language
+-e --ethnicity
 ```
 
 Specifies the gender of the generated names:
@@ -120,3 +119,5 @@ Specifies whether or not to print the output to the terminal (useless if there i
 -n --noprint
 ```
 
+## SOURCES:
+https://github.com/ironarachne/namegen

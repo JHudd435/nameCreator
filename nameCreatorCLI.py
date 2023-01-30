@@ -13,9 +13,7 @@ def nameCreatorCLI():
 @click.option('-g',
               '--gender',
               help='Gender of the generated name(s) (M)ale or (F)emale.')
-@click.option('-l',
-              '--language',
-              help='Language/Nationality of the generated name(s).')
+@click.option('-e', '--ethnicity', help='Ethnicity of the generated name(s).')
 @click.option('-a', '--amount', help='How many names are generated.')
 @click.option(
     '-o',
@@ -26,16 +24,16 @@ def nameCreatorCLI():
     '--noprint',
     help="Does not print the names. Useless if you are not using output.")
 @nameCreatorCLI.command()
-def generate(gender: str, language: str, amount=str, output=str, noprint=str):
-    """Generates names. Supported languages are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, Romanized Japanese, and Japanese."""
+def generate(gender: str, ethnicity: str, amount=str, output=str, noprint=str):
+    """Generates names. Supported ethnicities are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, Romanized Japanese, and Japanese."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
-            if (language == "japanese" or language == "japaneseR"):
-                firstname = nameCreator.LastName(language)
-                lastname = nameCreator.FirstNameMale(language)
+            if (ethnicity == "japanese" or ethnicity == "japaneseR"):
+                firstname = nameCreator.LastName(ethnicity)
+                lastname = nameCreator.FirstNameMale(ethnicity)
             else:
-                firstname = nameCreator.FirstNameMale(language)
-                lastname = nameCreator.LastName(language)
+                firstname = nameCreator.FirstNameMale(ethnicity)
+                lastname = nameCreator.LastName(ethnicity)
             try:
                 if (noprint.lower() == "t"):
                     pass
@@ -46,12 +44,12 @@ def generate(gender: str, language: str, amount=str, output=str, noprint=str):
                     f.write(firstname + " " + lastname + "\n")
     elif (gender.lower() == "female" or gender.lower() == "f"):
         for i in range(int(amount)):
-            if (language == "japanese" or language == "japaneseR"):
-                lastname = nameCreator.FirstNameFemale(language)
-                firstname = nameCreator.LastName(language)
+            if (ethnicity == "japanese" or ethnicity == "japaneseR"):
+                lastname = nameCreator.FirstNameFemale(ethnicity)
+                firstname = nameCreator.LastName(ethnicity)
             else:
-                firstname = nameCreator.FirstNameFemale(language)
-                lastname = nameCreator.LastName(language)
+                firstname = nameCreator.FirstNameFemale(ethnicity)
+                lastname = nameCreator.LastName(ethnicity)
             try:
                 if (noprint.lower() == "t"):
                     pass

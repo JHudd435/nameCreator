@@ -1,6 +1,6 @@
 # coding: utf-8
 """
-Generates male or female names, from a specified country. Languages are "american", "russian", "spanish", "italian", "german","french","swedish".
+Generates male or female names, from a specified country. Ethnicities are "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish", "japaneser" (japanese romanized), and "japanese".
 
 """
 
