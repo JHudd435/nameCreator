@@ -17,7 +17,7 @@ Install from pypi with `pip`:
 pip install nameCreator
 ```
 
-### Build from source
+### Build from source 
 Clone the repository and cd into the nameCreator directory, then:
 
 ```shell
@@ -27,28 +27,9 @@ cd dist
 pip install nameCreator-0.9.0-py3-none-any.whl
 ```
 
-## Usage
+## Usage (Only applies when built from source, read the release that you use's corresponding README for usage for that version)
 
-### In python file (latest release)
-```python
-firstNameMale = nameCreator.firstM.FirstNameMale('nationality')
-
-print(firstNameMale)
-
-lastName = nameCreator.last.LastName('nationality')
-
-print(lastName)
-
-firstNameFemale = nameCreator.firstF.FirstNameFemale('nationality')
-
-print(firstNameFemale)
-
-lastName = nameCreator.last.LastName('nationality')
-
-print(lastName)
-```
-
-### In python file (built from source)
+### In python file
 ```python
 firstNameMale = nameCreator.FirstNameMale('nationality')
 
