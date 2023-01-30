@@ -7,7 +7,7 @@
 A python name generator for Windows.
 
 This is a python package for name generation. It can generate names from different countries, and can generate both male and female names.
-Nationalities: "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish", "japaneser" (japanese romanized), and "japanese". Will be adding Chinese and Japanese by release 1.0.0. Also will split spanish into mexican, latino, and spanish.
+Nationalities: "american", "russian", "spanish", "italian", "german", "french", "swedish", "finnish", "japaneser" (japanese romanized), and "japanese". Will be adding Chinese by release 1.0.0. Also will split spanish into mexican, latino, and spanish.
 
 ## Installation
 
