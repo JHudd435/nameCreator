@@ -27,7 +27,7 @@ cd dist
 pip install nameCreator-0.9.0-py3-none-any.whl
 ```
 
-## Usage (Only applies when built from source, read the release that you use corresponding README for usage for that version)
+## Usage (Only applies when built from source, read the release's corresponding README for that version's usage)
 
 ### In python file
 ```python
