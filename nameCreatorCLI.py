@@ -25,10 +25,11 @@ def nameCreatorCLI():
     help="Does not print the names. Useless if you are not using output.")
 @nameCreatorCLI.command()
 def generate(gender: str, ethnicity: str, amount=str, output=str, noprint=str):
-    """Generates names. Supported ethnicities are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, Romanized Japanese, and Japanese."""
+    """Generates names. Supported ethnicities are American, Russian, Spanish, Italian, German, French, Finnish, Swedish, Romanized Japanese, Japanese, Romanized Chinese, and Chinese."""
     if (gender.lower() == "male" or gender.lower() == "m"):
         for i in range(int(amount)):
-            if (ethnicity == "japanese" or ethnicity == "japaneseR"):
+            if (ethnicity == "japanese" or ethnicity == "japaneseR"
+                    or ethnicity == "chinese" or ethnicity == "chineseR"):
                 firstname = nameCreator.LastName(ethnicity)
                 lastname = nameCreator.FirstNameMale(ethnicity)
             else:
@@ -44,7 +45,8 @@ def generate(gender: str, ethnicity: str, amount=str, output=str, noprint=str):
                     f.write(firstname + " " + lastname + "\n")
     elif (gender.lower() == "female" or gender.lower() == "f"):
         for i in range(int(amount)):
-            if (ethnicity == "japanese" or ethnicity == "japaneseR"):
+            if (ethnicity == "japanese" or ethnicity == "japaneseR"
+                    or ethnicity == "chinese" or ethnicity == "chineseR"):
                 lastname = nameCreator.FirstNameFemale(ethnicity)
                 firstname = nameCreator.LastName(ethnicity)
             else:

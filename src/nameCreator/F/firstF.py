@@ -15,6 +15,8 @@ FirstSwedishFemale = []
 FirstFinnishFemale = []
 FirstJapaneseRFemale = []
 FirstJapaneseFemale = []
+FirstChineseRFemale = []
+FirstChineseFemale = []
 
 
 def Line(obj):
@@ -72,6 +74,16 @@ with open(curDir + "\\names\\japanese.txt", encoding="utf-8") as mytxt:
     for line in mytxt:
         FirstJapaneseFemale.append(Line(line))
 
+# chineseR (romanized Chinese)
+with open(curDir + "\\names\\chineseR.txt", encoding="utf-8") as mytxt:
+    for line in mytxt:
+        FirstChineseRFemale.append(Line(line))
+
+# chinese
+with open(curDir + "\\names\\chinese.txt", encoding="utf-8") as mytxt:
+    for line in mytxt:
+        FirstChineseFemale.append(Line(line))
+
 
 # defs
 def FirstNameFemale(nationality):
@@ -95,3 +107,7 @@ def FirstNameFemale(nationality):
         return random.choice(FirstJapaneseRFemale)
     if (nationality.lower() == "japanese"):
         return random.choice(FirstJapaneseFemale)
+    if (nationality.lower() == "chineser"):
+        return random.choice(FirstChineseRFemale)
+    if (nationality.lower() == "chinese"):
+        return random.choice(FirstChineseFemale)

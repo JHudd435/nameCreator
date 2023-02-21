@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: nameCreator
+Version: 1.0.0
+Summary: A package to generate names by country
+Home-page: https://github.com/JHudd435/nameCreator
+Author: Justin Huddleston
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # nameCreator
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/JHudd435/nameCreator?style=for-the-badge)](https://github.com/JHudd435/nameCreator/releases/)
 [![GitHub forks](https://img.shields.io/github/forks/JHudd435/nameCreator?style=for-the-badge)](https://github.com/JHudd435/nameCreator/network/members)
