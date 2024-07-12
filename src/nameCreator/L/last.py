@@ -25,62 +25,62 @@ def Line(obj):
 
 # Read Files
 # american (USA)
-with open(curDir + "\\names\\american.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'american.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastAmerican.append(Line(line))
 
 # russian (Russian Federation)
-with open(curDir + "\\names\\russian.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'russian.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastRussian.append(Line(line))
 
 # spanish (Spain,Mexico, other Spanish speaking nations) (To be divided)
-with open(curDir + "\\names\\spanish.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'spanish.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastSpanish.append(Line(line))
 
 # italian
-with open(curDir + "\\names\\italian.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'italian.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastItalian.append(Line(line))
 
 # german
-with open(curDir + "\\names\\german.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'german.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastGerman.append(Line(line))
 
 # french
-with open(curDir + "\\names\\french.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'french.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastFrench.append(Line(line))
 
 # swedish
-with open(curDir + "\\names\\swedish.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'swedish.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastSwedish.append(Line(line))
 
 # finnish
-with open(curDir + "\\names\\finnish.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'finnish.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastFinnish.append(Line(line))
 
 # japaneseR (romanized Japanese)
-with open(curDir + "\\names\\japaneseR.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'japaneseR.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastJapaneseR.append(Line(line))
 
 # japanese
-with open(curDir + "\\names\\japanese.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'japanese.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastJapanese.append(Line(line))
 
 # chineseR (romanized Chinese)
-with open(curDir + "\\names\\chineseR.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'chineseR.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastChineseR.append(Line(line))
 
 # chinese
-with open(curDir + "\\names\\chinese.txt", encoding="utf-8") as mytxt:
+with open(os.path.join(curDir, os.path.join('names', 'chinese.txt')), encoding="utf-8") as mytxt:
     for line in mytxt:
         LastChinese.append(Line(line))
 

@@ -10,6 +10,7 @@ Classifier: Operating System :: Microsoft :: Windows
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: click
 
 # nameCreator
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/JHudd435/nameCreator?style=for-the-badge)](https://github.com/JHudd435/nameCreator/releases/)
